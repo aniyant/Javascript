@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoApp</title>
+   <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <span><a href="index.html">HOME</a></span>
+            <span><a href="archive.html">ARCHIVE</a></span>
+        </nav>
+        <div id="todo-container">
+            <div id="add-todo-box">
+                <form id="todo-form">
+                    <input type="text" name="title" id="title" placeholder="Add Your Task Here...">
+                    <select name="priority" id="priority">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High" selected>High</option>
+                    </select>
+                    <input type="text" id="status" name="status" value="pending 🩸" hidden>
+                    <div id="submit-div">
+                        <input type="submit" id="submit" value="Add Todo"/>
+                    </div>
+                </form>
+            </div>
+            <div id="todo-info-table" class="todo-info-table">
+                <table id="todo-table" class="todo-table">
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Priority</td>
+                            <td>Status</td>
+                            <td>Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

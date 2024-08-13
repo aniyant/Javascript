@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Page</title>
+    <style>
+        nav{
+        background-color: aqua;
+        height: 50px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 40px;
+      }
+      span{
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <span><a href="./index.html">Home</a></span>
+        <span><a href="product.html">Product</a></span>
+        <span><a href="user.html">SignUp/LogIn</a></span>
+    </nav>
+    <div class="container">
+        <div id="welcome">
+        </div>
+      <form action="#" id="form">
+        <div class="form-example">
+          <label for="name">Enter your name: </label>
+          <input type="text" name="name" id="name" min="4" max="15" required />
+        </div>
+        <div class="form-example">
+          <label for="password">Enter Password: </label>
+          <input type="password" name="password" id="password" min="8" max="16" required />
+        </div>
+
+        <div class="form-example">
+          <input type="submit" value="SignUp"/>
+        </div>
+      </form>
+    </div>
+    <script src="./user.js"></script>
+  </body>
+</html>

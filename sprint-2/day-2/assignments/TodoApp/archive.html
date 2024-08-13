@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/archive.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <span><a href="index.html">HOME</a></span>
+            <span><a href="archive.html">ARCHIVE</a></span>
+        </nav>
+        <div id="filter-box">
+            <form>
+            <select name="priority" id="priority">
+                <option value="">Select Priority</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <select name="status" id="status">
+                <option value="">Select Status</option>
+                <option value="pending 🩸">Pending</option>
+                <option value="completed ✔">Completed</option>
+            </select>
+            </form>
+        </div>
+        <div id="todo-info-table" class="todo-info-table">
+            <table id="todo-table" class="todo-table">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Priority</td>
+                        <td>Status</td>
+                        <td>Restore</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="scripts/archive.js"></script>
+</body>
+</html>

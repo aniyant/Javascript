@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="coffee">fetch</button>
+    <div id="show">
+        <table id="table">
+            
+        </table>
+    </div>
+    <script>
+       let url = "https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-coffee";
+       let fetch = document.getElementById("coffee");
+       fetch.addEventlistener("click",async (e)=>{
+        let res = await fetch(url);
+        let data = await res.json();
+        render(data);
+       })
+       render(data){
+        let table = document.getElementById("table");
+        table.innerHTML = "";
+        data.forEach(element => {
+            let row = document.createElement("tr");
+            row.innerHTML = `<tr>${element.title}</tr><tr><img src=${element.image}/></tr><tr>${element.price}</tr>`;
+            table.append(row);
+        });
+       }
+    </script>
+</body>
+</html>

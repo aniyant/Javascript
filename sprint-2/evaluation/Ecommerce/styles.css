@@ -1,0 +1,48 @@
+.container {
+    max-width: 1320px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  nav{
+    background-color: aqua;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  span{
+    padding: 10px;
+  }
+  #filter-container {
+    width: 25%;
+    border: 2px ridge;
+    border-radius: 10px;
+    background-color: bisque;
+  }
+  #filter-box{
+    position: fixed;
+    margin-left: 20px;
+  }
+  #products-container {
+    width: 75%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    border: 2px ridge;
+    border-radius: 10px;
+    
+  }
+  .card {
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    border: 1px ridge;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #welcome{
+    height: 20px;
+    text-align: center;
+    background-color: azure;
+  }

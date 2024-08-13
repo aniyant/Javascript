@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    /* gap:3%; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav{
+    text-align: center;
+    background-color: aliceblue;
+    font-size: medium;
+}
+span{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px ridge;
+}
+
+.card{
+    border: 1px ridge;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 25%;
+    margin: 10px;
+    height: auto;
+    text-align: center;
+}
+#info{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

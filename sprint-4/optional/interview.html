@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">
+        click
+    </button>
+    <div id="show"> </div>
+    <script>
+        let btn = document.getElementById("btn");
+        let show = document.getElementById("show");
+        let animals = ["cow","deer","cat","dog"];
+
+        btn.addEventListener("click",(e)=>{
+            function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+            show.innerHTML='';
+            let index = getRandomInt(animals.length-1);
+            console.log(index);
+            let a = animals[index];
+            show.innerText = a;
+        });
+    </script>
+</body>
+</html>

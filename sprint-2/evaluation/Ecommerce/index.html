@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <nav>
+        <span><a href="./index.html">Home</a></span>
+        <span><a href="product.html">Product</a></span>
+        <span><a href="user.html">SignUp/LogIn</a></span>
+    </nav>
+    <div id="welcome" style="text-align: center;margin: 20px;">
+         
+    </div>
+    <div class="container">
+      <div id="filter-container">
+        <div id="filter-box">
+       
+          <!-- {'Kitchen Appliances', 'Home Decor', 'Electronics', 'Personal Care', 'Fitness Equipment'} -->
+          <select name="select-category" id="select-category" style="margin:20px 0pc;">
+            <option value="">--SELECT CATEGORY--</option>
+            <option value="Kitchen Appliances">Kitchen Appliances</option>
+            <option value="Home Decor">Home Decor</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Personal Care">Personal Care</option>
+            <option value="Fitness Equipment">Fitness Equipment</option>
+          </select>
+
+          <fieldset id="price" style="margin:20px 0pc;">
+            <legend>Select Price Order:</legend>
+          
+            <div>
+              <input type="radio" id="asc" name="price" value="asc"/>
+              <label for="asc">low to high</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="desc" name="price" value="desc" />
+              <label for="desc">high to low</label>
+            </div>
+          </fieldset>
+
+          <fieldset id="rating" style="margin:20px 0pc;">
+            <legend>Select Rating Order:</legend>
+          
+            <div>
+              <input type="radio" id="rasc" name="rating" value="asc"/>
+              <label for="rasc">low to high</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="rdesc" name="rating" value="desc" />
+              <label for="rdesc">high to low</label>
+            </div>
+          </fieldset>
+          
+        </div>
+      </div>
+      <div id="products-container"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

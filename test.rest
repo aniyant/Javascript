@@ -1,0 +1,12 @@
+
+# GET https://jsonplaceholder.typicode.com/users
+
+####
+
+POST https://jsonplaceholder.typicode.com/todos
+Content-Type: application/json
+{
+    "userId":1,
+    "title":"sdjflsd",
+    "completed":true,
+}

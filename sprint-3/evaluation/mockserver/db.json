@@ -1,0 +1,68 @@
+{
+  "formFields": [
+    {
+      "key": "user_name",
+      "label": "Name",
+      "type": "text",
+      "maxLength": "50",
+      "id": "14ec"
+    },
+    {
+      "key": "mobile_no",
+      "label": "Mobile number",
+      "type": "number",
+      "maxLength": "10",
+      "id": "0e10"
+    },
+    {
+      "key": "email",
+      "label": "Email",
+      "type": "email",
+      "id": "db9e"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "091c",
+      "user_name": "sdfa",
+      "mobile_no": "242",
+      "email": "saf@fs"
+    },
+    {
+      "id": "e90a",
+      "user_name": "sdfa",
+      "mobile_no": "232",
+      "email": "sdfaf@sdaf"
+    },
+    {
+      "id": "b838",
+      "user_name": "safdas",
+      "mobile_no": "2342",
+      "email": "afd@adf"
+    },
+    {
+      "id": "8ebb",
+      "user_name": "sdaf",
+      "mobile_no": "213",
+      "email": "dsa2as@asdf"
+    },
+    {
+      "id": "5d75",
+      "user_name": "sunny",
+      "mobile_no": "876",
+      "email": "sunny@dsf"
+    },
+    {
+      "id": "3850",
+      "user_name": "sdfsdfs",
+      "mobile_no": "86878",
+      "email": "sdfsdf@sf"
+    },
+    {
+      "id": "dea0",
+      "user_name": "sdf",
+      "mobile_no": "23443434342342",
+      "email": "sfadsa@afaf"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Using plain JavaScript, manipulate the DOM to create a list (ul) element containing three items (li) with the names of your favorite movies. -->
+    <div id="container">
+
+    </div>
+    <script>
+        let container = document.getElementById("container");
+        let ul = document.createElement("ul");
+        for(let i=0;i<3;i++){
+            let li = document.createElement("li");
+            li.textContent = "hello";
+            ul.append(li);
+        }
+        container.append(ul);
+    </script>
+</body>
+</html>

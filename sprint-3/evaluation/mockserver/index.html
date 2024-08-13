@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        max-width:1320px;
+        margin:auto;
+        }
+    form{
+        width:400px;
+        margin:auto;
+        margin-top:30px;
+        padding:10px;
+        border:1px ridge;
+    }
+    form input{
+        width:100%;
+        padding:5px;
+        border:1px ridge;
+        border-radius:5px;
+        font-size:medium;
+    }
+    #submissions{
+        display:flex;
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .card{
+        width:300px;
+        height:auto;
+        padding:10px;
+        margin:10px;
+        border:1px ridge;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .card p{
+        font-size:medium;
+        font-weight:500px;
+    }
+    </style>
+</head>
+<body>  
+    <div class="container">
+         <h1 style="text-align:center;">Welcome To Registration</h1>
+         <button id="displayForm" style="display:block;text-align:center;margin:auto">Click To Show Registration Form</button>
+         <form id="form">
+            
+         </form>
+         <div id="submissions"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

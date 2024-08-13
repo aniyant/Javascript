@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create UI With React API</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+    //   const element = React.createElement("p", {
+    //     className:"greeting",
+    //     children: "Hello world.",
+    //   });
+    let desc = function(text,name){
+  return <><div>{text}<span>{name}</span></div><p>Enjoy the visit</p></>;
+}
+    let welcome = <span>   welcome</span>;
+const element = <><p className="greeting"><b id="name">Sunny,</b><i><span>Hello World</span></i>{welcome}</p><div>{desc("my name is ","sunny kumar")}</div></>;
+      const reactRoot = ReactDOM.createRoot(document.getElementById("root"));
+      reactRoot.render(element);
+    </script>
+  </body>
+</html>
+

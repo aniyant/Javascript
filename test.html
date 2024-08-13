@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+  //     function sunny(data){
+  //       console.log(data);
+  //     }
+  //     sunny("suny");
+
+  //     //2nd
+  //     var name1 = function(data){
+  //       console.log(data);
+  //     }
+  //     name1("sunny");
+
+  //     //3rd
+
+  //     var name2 = (data,data2)=>(console.log(data+data2));
+  //     name2("sunny","kumar");
+
+  //     function fetchData(callback) {
+  // // Simulate an asynchronous operation
+  // const data = { name: "John", age: 30 };
+  //       callback(data);
+  //         // setTimeout(function () {
+  //         //       const data = { name: "John", age: 30 };
+  //         //       callback(data);
+  //         //     }, 2000);
+  //     }
+
+  //     function handleData(data) {
+  //       console.log("Data received:", data);
+  //     }
+
+  //     fetchData(handleData("sdkfhskdjk"));
+
+        //   function performOperation(callback) {
+        //   // Simulate an operation that encounters an error
+        //   const success = false;
+            
+        //   if (success) {
+        //     callback(null, "Operation successful!");
+        //   } else {
+        //     const error = new Error("Operation failed!");
+        //     callback(error, null);
+        //   }
+        // }
+
+        // function handleResult(error, result) {
+        //   if (error) {
+        //     console.log("Error:", error.message);
+        //   } else {
+        //     console.log("Result:", result);
+        //   }
+        // }
+
+        // performOperation(handleResult);
+
+          //create a function called fatherPromise that take one marks array and will return a promise
+//after 2 sec the promise should either resolve or reject if the average marks is above 75
+//if average marks>=75 => resolve it saying "Congrats! I will gift you a bike"
+//else =>reject the promise saying "Sorry marks are not as expected , no bikes!"
+
+//produce a promise
+              function fatherPromise(marks) {
+                let func = function(resolve,reject){
+                  let sum = marks.reduce((acc, item) => item + acc);
+                  let average = sum / marks.length;
+                  // console.log("sum: ",sum);
+                  setTimeout(() => {
+                    if (average >= 75) {
+                      resolve("Congrats! I will gift you a bike");
+                    } else {
+                      reject("Sorry marks are not as expected , no bikes!");
+                    }
+                  }, 2000);
+                }
+                let promise1 = new Promise(func);
+                return promise1;
+              }
+
+              //consume the promise
+              let marks = [70, 90, 90];
+              console.log(fatherPromise(marks)
+                // .then((item) => {
+                //   console.log(item);
+                // })
+                // .catch((error) => {
+                //   console.log(error);
+                // });
+
+    </script>
+</body>
+</html>
